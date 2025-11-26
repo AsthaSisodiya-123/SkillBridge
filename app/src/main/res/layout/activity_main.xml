@@ -27,5 +27,4 @@
         android:fontFamily="serif"
         android:layout_marginTop="100sp"
         />
-
 </LinearLayout>
