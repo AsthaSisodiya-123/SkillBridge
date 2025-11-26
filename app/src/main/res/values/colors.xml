@@ -2,9 +2,4 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="etBgEnd">#41000000</color>
-    <color name="etBgStart">#7FFFFFFF</color>
-    <color name="startColor">#CBCCCE</color>
-    <color name="endColor">#3F5EFF</color>
-    <color name="cardColor">#A0FFFFFF</color>
 </resources>

@@ -82,11 +82,11 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
             Intent intent = new Intent(HomeActivity.this, ContactUsActivity.class);
             startActivity(intent);
         } else if (item.getItemId() == R.id.homeMenuAboutUs) {
-            Toast.makeText(HomeActivity.this, "My Profile", Toast.LENGTH_SHORT).show();
+            Toast.makeText(HomeActivity.this, "About Us", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(HomeActivity.this, AboutUsActivity.class);
             startActivity(intent);
         } else if (item.getItemId() == R.id.homeMenuHelpUs) {
-            Toast.makeText(HomeActivity.this, "My Profile", Toast.LENGTH_SHORT).show();
+            Toast.makeText(HomeActivity.this, "Help Us", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(HomeActivity.this, HelpUsActivity.class);
             startActivity(intent);
         }
