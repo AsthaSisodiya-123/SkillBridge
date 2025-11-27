@@ -12,7 +12,7 @@
         android:id="@+id/homeBottomNavStore"
         android:title="Store"
         app:showAsAction="never"
-        android:icon="@drawable/google_logo"
+        android:icon="@drawable/icon_store"
         />
     <item
         android:id="@+id/homeBottomNavProfile"
