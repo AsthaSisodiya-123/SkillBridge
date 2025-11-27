@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeBottomNavHome"
+        android:title="Home"
+        app:showAsAction="never"
+        android:icon="@drawable/icon_home"
+        />
+    <item
+        android:id="@+id/homeBottomNavStore"
+        android:title="Store"
+        app:showAsAction="never"
+        android:icon="@drawable/google_logo"
+        />
+    <item
+        android:id="@+id/homeBottomNavProfile"
+        android:title="Profile"
+        app:showAsAction="never"
+        android:icon="@drawable/username"
+        />
+    <item
+        android:id="@+id/homeBottomNavSettings"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:icon="@drawable/icon_setting"
+        />
+</menu>
