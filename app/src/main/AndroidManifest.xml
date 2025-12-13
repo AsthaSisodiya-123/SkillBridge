@@ -6,8 +6,37 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/skillbridge_icon"
+        android:label="SkillBridge"
         android:supportsRtl="true"
+        android:theme="@style/Base.Theme.SkillBridge"
         tools:targetApi="31">
+        <activity
+            android:name=".HelpUsActivity"
+            android:exported="false"
+            android:label="Help Us"
+            android:theme="@style/Theme.SkillBridge"/>
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false"
+            android:label="About Us"
+            android:theme="@style/Theme.SkillBridge"/>
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="false"
+            android:label="Contact Us"
+            android:theme="@style/Theme.SkillBridge"/>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="SkillBridge"
+            android:theme="@style/Theme.SkillBridge"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -18,5 +47,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

@@ -4,12 +4,14 @@ plugins {
 
 android {
     namespace = "com.example.skillbridge"
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.skillbridge"
         minSdk = 24
         versionCode = 1
         versionName = "1.0"
+        targetSdk = 36
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.SkillBridge" parent="Base.Theme.SkillBridge" />
+    <style name="Theme.SkillBridge" parent="Theme.Material3.DayNight" />
 </resources>
