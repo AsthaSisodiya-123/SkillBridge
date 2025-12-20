@@ -24,6 +24,6 @@
         android:id="@+id/homeBottomNavSettings"
         android:title="Settings"
         app:showAsAction="never"
-        android:icon="@drawable/icon_setting"
+        android:icon="@drawable/icon_settings"
         />
 </menu>

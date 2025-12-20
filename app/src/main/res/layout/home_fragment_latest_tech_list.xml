@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ai"
+            android:id="@+id/latestTechnologyImage"
+            android:layout_margin="6dp"/>
+
+
+            <TextView
+                android:id="@+id/latestTechnologyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology name"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:layout_marginBottom="10sp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="210dp"/>
+
+
+
+</FrameLayout>

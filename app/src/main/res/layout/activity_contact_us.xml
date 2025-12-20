@@ -1,10 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactUsActivity">
+    android:background="#F9F9F9">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you having any trouble?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#007BFF" />
+
+    <!-- Heading -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000" />
+
+
+    <!-- Message Input -->
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Type your message"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColorHint="@color/grey_font"
+        android:textColor="@color/black"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:backgroundTint="#007BFF"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- In-App Message Display -->
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Subject"
+        android:inputType="textEmailSubject"
+        android:padding="12dp"
+        android:textColorHint="@color/grey_font"
+        android:textColor="@color/black"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="5dp"/>
+    <!-- Message Input -->
+    <EditText
+        android:id="@+id/etEmailMsg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Type your message"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColorHint="@color/grey_font"
+        android:textColor="@color/black"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/btnSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:backgroundTint="#007BFF"
+        android:textColor="#FFF"
+        android:padding="12dp"
+        />
+</LinearLayout>

@@ -3,12 +3,202 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.ProfileFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ProfileFragment"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Profile Fragment" />
+        tools:context=".MyProfileActivity"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MyProfileActivity"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivMyProfileImage"
+                android:src="@drawable/username"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/CircleImageView"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="15sp"
+                />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="________________________________________________________"
+            android:textColor="@color/etBgEnd"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MyProfileActivity"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_info"
+                android:layout_marginStart="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Information"
+                android:layout_marginLeft="8sp"
+                android:layout_marginRight="100dp"
+                android:textSize="15sp"
+                android:textColor="@color/etBgEnd"
+                android:textStyle="bold"
+                android:layout_marginTop="2sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_edit"
+                android:layout_marginLeft="18sp"
+                />
+
+            <TextView
+                android:id="@+id/edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_marginLeft="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/endColor"
+                android:textStyle="bold"
+                android:layout_marginTop="2sp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="________________________________________________________"
+            android:textColor="@color/etBgEnd"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Name:"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10sp"
+            android:textSize="10sp"
+            android:textColor="@color/etBgEnd"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/username"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileName"
+            android:text="Astha Rahulsingh Sisodiya"
+            android:textSize="15sp"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Mobile No:"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10sp"
+            android:textSize="10sp"
+            android:textColor="@color/etBgEnd"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/icon_phone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileMobileNo"
+            android:text="8329431239"
+            android:textSize="15sp"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Email:"
+            android:drawableStart="@drawable/icon_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10sp"
+            android:textSize="10sp"
+            android:textColor="@color/etBgEnd"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileEmail"
+            android:text="astha.sisodiya0112@gmail.com"
+            android:textSize="15sp"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Userame:"
+            android:drawableStart="@drawable/baseline_account"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10sp"
+            android:textSize="10sp"
+            android:textColor="@color/etBgEnd"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileUsername"
+            android:text="Rano Thakur"
+            android:textSize="15sp"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="10sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
 
 </FrameLayout>

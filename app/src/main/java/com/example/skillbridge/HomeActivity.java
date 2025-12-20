@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -32,10 +34,13 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
     BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#5C6ED1")));
+
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         editor = preferences.edit();
 
